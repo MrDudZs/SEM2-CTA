@@ -22,3 +22,9 @@ body{
     align-items: center;
 }
 
+.desk-logo{
+    image-rendering: optimizeSpeed;
+    background-image: none;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
