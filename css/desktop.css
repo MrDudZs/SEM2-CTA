@@ -1,0 +1,24 @@
+/*Main*/
+body{
+    margin: 0%;
+    background-color: #D1D1D1;
+
+    
+}
+
+.container{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.header-container{
+    background-color: #36454F;
+    margin: 0%;
+    padding: 25px;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
