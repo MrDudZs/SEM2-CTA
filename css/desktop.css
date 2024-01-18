@@ -1,20 +1,20 @@
 /*Main*/
-body{
+body {
     margin: 0%;
     background-color: #D1D1D1;
 
-    
+
 }
 
-.container{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+.container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.desk-header{
-    background-color: #36454F;
+.desk-header {
+    background-color: #28999f;
     margin: 0%;
     padding: 25px;
-    
+
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -22,9 +22,49 @@ body{
     align-items: center;
 }
 
-.desk-logo{
+.desk-logo {
     image-rendering: optimizeSpeed;
     background-image: none;
     object-fit: contain;
-    mix-blend-mode: color-burn;
+    mix-blend-mode: color-dodge;
+}
+
+.top-nav {
+    background-color: #5d6870;
+}
+
+ul {
+    margin: 0%;
+    padding: 0%;
+
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    border-right: 1px solid black;
+    float: left;
+}
+
+
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+
+    padding: 14px 16px;
+    text-decoration: underline white;
+}
+
+li:hover:not(.active) {
+    background-color: greenyellow;
+}
+
+.active{
+    background-color: lightskyblue;
 }
