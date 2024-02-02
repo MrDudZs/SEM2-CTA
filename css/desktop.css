@@ -65,6 +65,44 @@ li:hover:not(.active) {
     background-color: greenyellow;
 }
 
-.active{
+.active {
     background-color: lightskyblue;
+}
+
+select{
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    border-radius: 25px;
+    text-decoration:solid;
+}
+
+/* exchange */
+.exchange-cent-cont {
+    background-color: #5d6870;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 50px 500px 50px 500px;
+    padding: 5px;
+    padding-bottom: 500px;
+}
+
+.exchange-cent-hd {
+    text-decoration: underline;
+}
+
+.exchange-cent-input-mn{
+    display: flex;
+
+    text-decoration: underline;
+
+    text-align: center;
+}
+
+.exchange-cent-input-box{
+    display: flex;
+    flex-direction: column;
 }
