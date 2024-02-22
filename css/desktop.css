@@ -77,6 +77,14 @@ select{
     text-decoration:solid;
 }
 
+/* Functional */
+.input-box{
+    display: flex;
+}
+
+/* Index */
+
+
 /* exchange */
 .exchange-cent-cont {
     background-color: #5d6870;
@@ -85,7 +93,9 @@ select{
     align-items: center;
     flex-direction: column;
 
-    margin: 50px 500px 50px 500px;
+    max-width: 500px;
+    min-width: 500px;
+    margin: 0 auto;
     padding: 5px;
     padding-bottom: 500px;
 }
@@ -99,10 +109,21 @@ select{
 
     text-decoration: underline;
 
-    text-align: center;
 }
 
 .exchange-cent-input-box{
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+
+/* LOGIN */
+.login-container-mn {
+    display: flex;
+
+    background-color: #5d6870;
+    max-width: 500px;
+    min-width: 500px;
+    margin: 0 auto;
 }
