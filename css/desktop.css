@@ -1,25 +1,21 @@
-/*Main*/
+/*MAIN*/
+
 body {
-    margin: 0%;
-    background-color: #D1D1D1;
-
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin: 0;
 }
 
-.container {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.header-mn {
+    margin: 0;
+    background-color: midnightblue;
+    height: 250px;
+    padding: 10px;
+    color: white;
 }
 
-.desk-header {
-    background-color: #28999f;
-    margin: 0%;
-    padding: 25px;
-
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.header-mn a {
+    color: white;
 }
 
 .desk-logo {
@@ -27,7 +23,93 @@ body {
     background-image: none;
     object-fit: contain;
     mix-blend-mode: color-dodge;
+    image-resolution: 40px;
 }
+
+/*Footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #5d6870;
+    margin: 0 auto;
+}
+
+/* LOGIN PAGE */
+
+.loginContent {
+    margin: 0px auto;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.registerContent {
+    text-align: center;
+}
+
+
+.input {
+    border-radius: 5px;
+    border: solid thin #aaa;
+    padding: 10px;
+    margin: 4px;
+    display: flex;
+}
+
+.button {
+    border-radius: 5px;
+    border: solid thin #aaa;
+    padding: 10px;
+    margin: 4px;
+
+    cursor: pointer;
+}
+
+/*Exchange*/
+.exchange-cont-mn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.warn:hover + .warn-hide{
+    display: flex;
+    flex-direction: row;
+    color: red;
+}
+
+.result-cont{
+    background-color: cadetblue;
+    margin: 0 auto;
+    padding: 20px 20px;
+    font-size: 16px;
+}
+.warn-hide{
+    display: none;
+}
+/*Sign up*/
+.signup-content {
+    margin: 0px auto;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*NAV BAR*/
 
 .top-nav {
     background-color: #5d6870;
@@ -67,63 +149,4 @@ li:hover:not(.active) {
 
 .active {
     background-color: lightskyblue;
-}
-
-select{
-    background-color: transparent;
-    color: white;
-    border: transparent;
-    border-radius: 25px;
-    text-decoration:solid;
-}
-
-/* Functional */
-.input-box{
-    display: flex;
-}
-
-/* Index */
-
-
-/* exchange */
-.exchange-cent-cont {
-    background-color: #5d6870;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    max-width: 500px;
-    min-width: 500px;
-    margin: 0 auto;
-    padding: 5px;
-    padding-bottom: 500px;
-}
-
-.exchange-cent-hd {
-    text-decoration: underline;
-}
-
-.exchange-cent-input-mn{
-    display: flex;
-
-    text-decoration: underline;
-
-}
-
-.exchange-cent-input-box{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-/* LOGIN */
-.login-container-mn {
-    display: flex;
-
-    background-color: #5d6870;
-    max-width: 500px;
-    min-width: 500px;
-    margin: 0 auto;
 }
