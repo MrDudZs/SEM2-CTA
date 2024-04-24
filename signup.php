@@ -39,9 +39,11 @@
                         <br>
                         <input class="input" type="date" name="dob" required style="padding-right: 61px;">
                         <br>
-                        <input class="input" type="password" name="password" placeholder="password" required> <br>
+                        <input class="input" type="password" name="password" placeholder="password" required> 
+                        <br>
                         <br>
                         <input class="button" type="submit" value="Register">
+
                     </form>
                     <form class="registerContent" action="login.php" method="get">
                         <h3>Already a user?</h3>
