@@ -28,7 +28,7 @@
 
         <div class="loginContainer">
             <div class="loginContent">
-                <h2>Register</h2>
+                <h2>Login</h2>
                 <div class="loginForm">
                     <form action="loginprocess.php" method="post">
                         <input class="input" type="email" name="email" placeholder="email" required>
@@ -46,15 +46,17 @@
                     <form class="registerContent" action="stafflogin.php" method="get">
                         <h3>Staff Member?</h3>
                         <input class="button" type="submit" value="Staff Login">
-                        <form>
+                    </form>
                 </div>
             </div>
         </div>
 
-        <div class="footer-container-mn">
-            <?php
-            include 'php/includes/footer.php';
-            ?>
+        <div class="footer-container">
+            <div class="footer-content">
+                <?php
+                include "php/includes/footer.php"
+                    ?>
+            </div>
         </div>
     </div>
 
