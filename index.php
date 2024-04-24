@@ -23,22 +23,21 @@
             session_start();
             if(isset($_SESSION['user_id']) && isset($_SESSION['email'])) {
                 include "php/includes/usernav.php";
-            } else {
-                // User is not logged in, display normal nav bar
-                include "php/includes/nav.php";
-                exit;
+            } elseif(isset( $_SESSION['staff_id'])){
+                include "php/includes/staffnav.php";
             }
-
             ?>
         </div>
-        <div class="exchange-cont-mn">
+        <div class="index-cont-mn">
             <main>
             </main>
         </div>
-        <div class="footer-container-mn">
-            <?php
-            include "php/includes/footer.php";
-            ?>
+        <div class="footer-container">
+            <div class="footer-content">
+                <?php
+                include "php/includes/footer.php"
+                    ?>
+            </div>
         </div>
     </div>
 </body>
