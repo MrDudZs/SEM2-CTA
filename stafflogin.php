@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTER</title>
+    <title>LOGIN</title>
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 601px)" />
 </head>
@@ -27,7 +27,7 @@
 
         <div class="loginContainer">
             <div class="loginContent">
-                <h2>Register</h2>
+                <h2>Login:</h2>
                 <div class="loginForm">
                     <form action="staffloginprocess.php" method="post">
                         <input class="input" type="email" name="email" placeholder="email" required>
@@ -44,7 +44,7 @@
 
         <div class="footer-container-mn">
             <?php
-                include 'php/includes/footer.php';
+               // include 'php/includes/footer.php';
             ?>
         </div>
     </div>
