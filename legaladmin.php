@@ -4,46 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
+    <title>ADMIN</title>
     <script></script>
     <link rel="stylesheet" type="text/css" href="css/mobile.css" />
     <link rel="stylesheet" type="text/css" media="only screen and (min-width:601px)" href="css/desktop.css" />
 </head>
-<style>
-
-</style>
+<?php
+session_start();
+?>
 
 <body>
     <div class="container-mn">
 
         <div class="header-container">
             <div class="header-content">
-                <?php 
-                    include "php/header.php"
-                ?>
+                <?php
+                include "php/includes/header.php"
+                    ?>
             </div>
         </div>
         <div class="nav-container">
             <div class="nav-content">
                 <?php
-                include "php/nav.php"
-                    ?>
-            </div>
-        </div>
-
-        <div class="admin-container-mn">
-            <div class="admin-content-mn">
-                <h1>Welcome: <?php $username?> </h1>
-            </div>
-        </div>
-
-        <div class="footer-container">
-            <div class="footer-content">
-                <?php
-                    include "php/footer.php"
+                if (isset($_SESSION['staff_id'])) {
+                    include "php/includes/staffnav.php";
+                }
                 ?>
             </div>
         </div>
+
+        <div class="admin-display">
+            <h2> Welcome: </h2>
+        </div>
+        <div class="admin-content-main">
+            <div class="admin-card">
+                <h2><u>View Your <br> Information</u></h2>
+                <form action="view-userinfo.php">
+                    <input class="input-btn" type="submit" value="Settings">
+                </form>
+            </div>
+        </div>
+        <div class="admin-container-users">
+            <div class="admin-card">
+                <h2><u>Account <br> Flagged</u></h2>
+                <?php
+                include "php/legal-processes/display-flagrec.php";
+                ?>
+                <form action="view-flaggedacc.php">
+                    <input class="input-btn" type="submit" value="Review Flagged Users">
+                </form>
+            </div>
+            <div class="admin-card">
+                <h2><u>Suspend <br> Account</u></h2>
+                <form action="suspend-acc-page.php">
+                    <input class="input-btn" type="submit" value="Suspend Users">
+                    </from>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer-content">
+            <?php
+            include "php/includes/footer.php"
+                ?>
+        </div>
+    </div>
     </div>
 </body>
 
