@@ -32,27 +32,45 @@
             ?>
         </div>
         <div class="dashboard-cont-mn">
-            <main>
-                <div class="top-content-mn">
-                    <h3>USER ID:
-                        <?php
-                        if (isset ($_SESSION['user_id']) && isset ($_SESSION['email'])) {
-                            // User is logged is
-                            echo $_SESSION['user_id'];
-                        } ?>
-                    </h3>
-                    <p style="color: red;">
-                        Please make note of this! you will need this to login!
-                    </p>
+            <main class="dashboard-row">
+                <div class="dash-leftcont-mn" style="background-color: #CECECE;">
+                    <div class="dash-card">
+                        <h3>USER ID:
+                            <?php
+                            if (isset ($_SESSION['user_id']) && isset ($_SESSION['email'])) {
+                                // User is logged is
+                                echo $_SESSION['user_id'];
+                            } ?>
+                        </h3>
+                        <p style="color: red;">
+                            Please make note of this! you will need this to login!
+                        </p>
+                    </div>
                 </div>
+                <div class="dash-right-mn">
+                    <?php
+                    include "php/includes/dashwalletview.php";
+                    ?>
+                </div>
+
             </main>
         </div>
-        <div class="footer-container-mn">
-            <?php
-            include "php/includes/footer.php";
-            ?>
+        <div class="footer-container">
+            <div class="footer-content">
+                <?php
+                include "php/includes/footer.php"
+                    ?>
+            </div>
         </div>
     </div>
 </body>
 
 </html>
+
+
+<!-- TO DO:
+Creat a way to show audit logs
+
+Create link to wallet.php
+
+Give user a way to view their details and update
