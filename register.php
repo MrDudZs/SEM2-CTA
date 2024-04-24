@@ -1,11 +1,10 @@
 <?php
 
-$servername = "localhost";
-$username = "root"; // Your MySQL username
-$password = ""; // Your MySQL password
-$dbname = 'currency_transfer_app'; // Your database name
+session_start();
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Connection
+include 'php/config.php';
+
 
 if ($conn->connect_error) {
     die ("Connection failed: " . $conn->connect_error);
@@ -24,7 +23,8 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 $is_suspended = false;
 
 // SQL query to insert user into the database
-$sql = "INSERT INTO users (first_name, surname, email, dob, password, is_suspended) VALUES ('$first_name', '$surname', '$email', '$dob', '$hashed_password', '$is_suspended')";
+$sql = "INSERT INTO users (first_name, surname, email, dob, password, is_suspended) 
+        VALUES ('$first_name', '$surname', '$email', '$dob', '$hashed_password', '$is_suspended')";
 
 if ($conn->query($sql) === TRUE) {
     $user_id = $conn->insert_id;
@@ -41,7 +41,7 @@ if ($conn->query($sql) === TRUE) {
 
 
             echo "User registered successfully";
-            header("Location: dashboard.php");
+            header("Location: login.php");
 
 
         } else {
