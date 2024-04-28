@@ -12,7 +12,7 @@
 
 <body>
     <div class="container-mn">
-        <div class="header-mn header-mb">
+        <div class="desk-header mob-header">
             <?php
             include "php/includes/header.php";
             ?>
